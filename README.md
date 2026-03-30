@@ -23,5 +23,6 @@ Formula 1 is a high-stakes environment where teams spend between $100M–$400M a
 * **Data Source:** `Fast F1` Python package & historical race results.
 
 ---
+
 ## License
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
