@@ -1,30 +1,27 @@
-# F1-Race-Predictions
+# F1 Championship Predictor: Strategy & Performance Analytics
+**A multivariate regression suite predicting the 2025 World Championship outcomes.**
 
-This project utilizes multivariate regression analysis to decode the factors that determine a driver's points finish in modern Formula 1. By segmenting data based on pit-stop strategies, the model identifies how variables like starting grid position, fastest lap consistency, and tire management impact final race results.
+## Project Overview
+Formula 1 is a high-stakes environment where teams spend between $100M–$400M annually. This project uses statistical modeling to predict race outcomes and championship standings. By analyzing historical data (2022-2025) and segmenting races by pit-stop strategy, we quantified the variables that translate to podium finishes and constructor points.
 
-## Analysis Notebooks
-* **[Strategy: 1-2 Stop Races]** — Focused on high-efficiency, low-wear circuits.
-* **[Strategy: 2-3 Stop Races]** — Focused on high-degradation tracks requiring aggressive pit management.
+## Interactive Analysis
+* **[Notebook: 1-2 Stop Strategy]** — High-efficiency race modeling.
+* **[Notebook: 2-3 Stop Strategy]** — High-degradation race modeling.
+* [View Presentation Slides](https://github.com/Swt16/F1-Race-Predictions/blob/main/MSIS%20510%20-%20Formula%201%20Championship%20Prediction.pdf) — *Includes 2025 Title Predictions.*
 
 ---
 
-## Key Findings
-* **Grid Position Correlation:** Quantified the exact "premium" a front-row start provides versus mid-pack volatility.
-* **Pit Stop Optimization:** Analyzed the point-return on varying stop strategies, identifying the threshold where an extra stop for fresh tires outweighs the time lost in the pit lane.
-* **Predictive Accuracy:** Achieved a **Test RMSE of ~2.94** for 1-2 stop strategies and **~3.16** for 2-3 stop strategies, highlighting the increased unpredictability in high-degradation races.
+## Key Insights & Results
+* **The "Strategy Gap":** Our model identified a distinct performance variance between low-stop and high-stop races, achieving a **Test RMSE of 2.94** for optimized 1-2 stop strategies.
+* **Championship Prediction:** Based on current telemetry and regression results, the model successfully forecasted a tight title race between Lando Norris and Max Verstappen, with **McLaren** clinching the Constructor’s Championship.
+* **Feature Importance:** Quantified the impact of starting grid position versus mid-race pace, providing a statistical look at "track position" value.
 
 ## Technical Stack
-* **Statistical Modeling:** `Statsmodels` (OLS Regression), `Scikit-Learn` (Linear Regression)
-* **Data Manipulation:** `Pandas`, `NumPy`
-* **Visualization:** `Seaborn`, `Matplotlib` (Heatmaps and Residual Plots)
+* **Modeling:** `Statsmodels` (OLS Regression), `Scikit-Learn` (Linear Regression)
+* **Data Engineering:** `Pandas`, `NumPy`
+* **Visualization:** `Seaborn` (Heatmaps, Residual Plots)
+* **Data Source:** `Fast F1` Python package & historical race results.
 
-## Repository Structure
-* `/notebooks`: Contains regression analyses for different race strategy segments.
-* `/data`: F1 driver performance data (2022-2025).
-* `MSIS 510 - Formula 1 Championship Prediction.pdf`: Comprehensive breakdown of statistical significance and p-values for race variables.
-
-## Data Source
-Data was synthesized from historical F1 race results (2022-2025), focusing on driver standings, pit data, and qualifying metrics.
-
+---
 ## License
-This project is licensed under the MIT License.
+MIT License
